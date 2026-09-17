@@ -15,13 +15,13 @@ public class TareasService {
 
     private final TareasRepository tareasRepository;
 
-    public TareaService(TareasRepository tareasRepository) {
+    public TareasService(TareasRepository tareasRepository) {
         this.tareasRepository = tareasRepository;
     }
 
     public List<TareasResponseDTO> obtenerTodas() {
         return tareasRepository.findAll().stream()
-                .map(this.mapearAResponseDTO)
+                .map(this::mapearAResponseDTO)
                 .collect(Collectors.toList());
     }
 

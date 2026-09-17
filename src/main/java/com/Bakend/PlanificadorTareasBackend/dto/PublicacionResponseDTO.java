@@ -1,5 +1,4 @@
 package com.Bakend.PlanificadorTareasBackend.dto;
-
 import lombok.Data;
 import java.time.LocalDateTime;
 import java.util.List;
